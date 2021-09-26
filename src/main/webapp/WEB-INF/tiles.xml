@@ -7,6 +7,7 @@
 
 	<definition name="root.*" template="/WEB-INF/views/main/layout.jsp">
 		<put-attribute name="header" value="/WEB-INF/views/main/header.jsp"></put-attribute>
+		<put-attribute name="aside" value="/WEB-INF/views/main/aside.jsp"></put-attribute>
 		<put-attribute name="article" value="/WEB-INF/views/main/{1}.jsp"></put-attribute>
 	</definition>
 	
