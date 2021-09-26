@@ -3,8 +3,6 @@
 	font-size:100pt;
 	position: absolute; left: 50%; margin-left: -170px;
 }
-
-.margin{
-	margin-left:10%;
-	margin-right:10%;
+#aside-line{
+	border-right:1px solid;
 }
