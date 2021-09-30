@@ -3,6 +3,25 @@
 	font-size:100pt;
 	position: absolute; left: 50%; margin-left: -170px;
 }
+
 #aside-line{
 	border-right:1px solid;
+}
+
+#article{
+	padding:12px 12px 12px 12px;
+}
+#login-form{
+	padding :50px;
+	border:2px outset;
+	width:500px;
+}
+.center-horizontal{
+	left:0; right:0; margin-left:auto; margin-right:auto;
+	/*position: absolute; left: 50%; transform: translateX(-50%);*/
+}
+.center-vertical{
+	position: absolute; top: 50%; transform: translateY(-50%);
+
+	/*top: 0; bottom:0; margin-top:auto; margin-bottom:auto;*/
 }

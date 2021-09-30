@@ -31,8 +31,9 @@
 
 
 
-	
+		
 	<context:component-scan base-package="com.community.japanese" />
+	<context:component-scan base-package="com.community.japanese.controller" />
 	
 	
 	

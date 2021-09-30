@@ -4,6 +4,8 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
+	<definition name="root.login.*" template="/WEB-INF/views/login/{1}.jsp">
+	</definition>
 
 	<definition name="root.*" template="/WEB-INF/views/main/layout.jsp">
 		<put-attribute name="header" value="/WEB-INF/views/main/header.jsp"></put-attribute>

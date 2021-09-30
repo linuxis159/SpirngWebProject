@@ -5,10 +5,10 @@
   		<div class="container-fluid">
      		<a class="navbar-brand" href="/main">Main</a>
       		<form class="d-flex" id="search-middle">
-        		<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        		<input class="form-control me-2" name="searchWord"type="search" placeholder="Search"  maxlenghth="50">
         		<button class="btn btn-outline-success" type="submit">Search</button>
       		</form>
-      		<a class="navbar-brand" href="/login">Login</a>
+      		<a class="navbar-brand" href="/login/formPage">Login</a>
     	</div>
 </nav>
 
