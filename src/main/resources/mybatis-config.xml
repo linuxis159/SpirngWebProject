@@ -18,7 +18,8 @@
   
   <mappers>
     <mapper resource="mapper/login-mapper.xml"/>
-
+    <mapper resource="mapper/main-mapper.xml"/>
+	<mapper resource="mapper/board-mapper.xml"/>
   </mappers>
 </configuration>
 

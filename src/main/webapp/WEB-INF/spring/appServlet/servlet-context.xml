@@ -34,7 +34,7 @@
 		
 	<context:component-scan base-package="com.community.japanese" />
 	<context:component-scan base-package="com.community.japanese.controller" />
-	
-	
+	<context:component-scan base-package="com.community.japanese.service" />
+	<context:component-scan base-package="com.community.japanese.dao" />
 	
 </beans:beans>
