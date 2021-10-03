@@ -2,10 +2,13 @@ package com.community.japanese.vo;
 
 import java.util.Date;
 
+import com.community.japanese.datesetting.DateFormat;
+
 public class Post {
 	int postIdNum;
 	int userIdNum;
 	int boardIdNum;
+	int rNum;
 	String postTitle;
 	String postArticle;
 	Date postRagDate;
@@ -16,12 +19,13 @@ public class Post {
 	public Post() {
 
 	}
-	public Post(int postIdNum, int userIdNum, int boardIdNum, String postTitle, String postArticle, Date postRagDate,
-			int postView, int likePost, int dislikePost, String subtitleCheck) {
+	public Post(int postIdNum, int userIdNum, int boardIdNum, int rNum, String postTitle, String postArticle,
+			Date postRagDate, int postView, int likePost, int dislikePost, String subtitleCheck) {
 		super();
 		this.postIdNum = postIdNum;
 		this.userIdNum = userIdNum;
 		this.boardIdNum = boardIdNum;
+		this.rNum = rNum;
 		this.postTitle = postTitle;
 		this.postArticle = postArticle;
 		this.postRagDate = postRagDate;
@@ -48,6 +52,12 @@ public class Post {
 	public void setBoardIdNum(int boardIdNum) {
 		this.boardIdNum = boardIdNum;
 	}
+	public int getrNum() {
+		return rNum;
+	}
+	public void setrNum(int rNum) {
+		this.rNum = rNum;
+	}
 	public String getPostTitle() {
 		return postTitle;
 	}
@@ -60,9 +70,12 @@ public class Post {
 	public void setPostArticle(String postArticle) {
 		this.postArticle = postArticle;
 	}
-	public Date getPostRagDate() {
-		return postRagDate;
+	
+	public String getPostRagDate() {
+		String afterFormat = DateFormat.setDateFormat(postRagDate);
+		return afterFormat;
 	}
+	
 	public void setPostRagDate(Date postRagDate) {
 		this.postRagDate = postRagDate;
 	}
@@ -92,11 +105,17 @@ public class Post {
 	}
 	@Override
 	public String toString() {
-		return "Post [postIdNum=" + postIdNum + ", userIdNum=" + userIdNum + ", boardIdNum=" + boardIdNum
-				+ ", postTitle=" + postTitle + ", postArticle=" + postArticle + ", postRagDate=" + postRagDate
+		return "Post [postIdNum=" + postIdNum + ", userIdNum=" + userIdNum + ", boardIdNum=" + boardIdNum + ", rNum="
+				+ rNum + ", postTitle=" + postTitle + ", postArticle=" + postArticle + ", postRagDate=" + postRagDate
 				+ ", postView=" + postView + ", likePost=" + likePost + ", dislikePost=" + dislikePost
 				+ ", subtitleCheck=" + subtitleCheck + "]";
 	}
+	
+
+	
+
+
+
 	
 	
 	

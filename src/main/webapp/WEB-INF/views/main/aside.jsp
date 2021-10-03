@@ -17,7 +17,7 @@
   <tbody>
   <c:forEach var="item" items="${boardList}">
     <tr>
-      <td><a href="/board/list?boardId=${item.getBoardIdNum()}">${item.getBoardName()}</a></td>
+      <td><a href="/board/list?boardId=${item.getBoardIdNum()}&page=1&sort=1">${item.getBoardName()}</a></td>
     </tr>
   </c:forEach>
 
