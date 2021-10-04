@@ -40,10 +40,10 @@
 <div style="text-align : center">
 	<c:choose>
 		<c:when test="${pDto.getPage() > 1}">
-			<button type="button" onClick="location.href='/board/list?boardId=${pDto.getBoardIdNum()}&page=${pDto.getPage()-1}&'+document.location.href.split('&')[2]"><<</button>
+			<button type="button" class="btn btn-light" onClick="location.href='/board/list?boardId=${pDto.getBoardIdNum()}&page=${pDto.getPage()-1}&'+document.location.href.split('&')[2]"><<</button>
 		</c:when>
 		<c:when test="${pDto.getPage() <= 1 }">
-			<button type="button">처음</button>
+			<button type="button" class="btn btn-light">처음</button>
 		</c:when>
 	</c:choose>
   	<c:forEach var="i" begin="${pDto.getStartPage()}" end="${pDto.getEndPage()}">
@@ -51,10 +51,10 @@
   	</c:forEach>
   	<c:choose>
   		<c:when test="${pDto.getPage() < pDto.getMaxPage()}">
-			<button type="button" value="다음" onClick="location.href='/board/list?boardId=${pDto.getBoardIdNum()}&page=${pDto.getPage()+1}&'+document.location.href.split('&')[2]">>></button>
+			<button type="button" class="btn btn-light" value="다음" onClick="location.href='/board/list?boardId=${pDto.getBoardIdNum()}&page=${pDto.getPage()+1}&'+document.location.href.split('&')[2]">>></button>
 		</c:when>
 		<c:when test="${pDto.getPage() >= pDto.getMaxPage()}">
-			<button type="button">마지막</button>
+			<button type="button" class="btn btn-light">마지막</button>
 		</c:when>
 		
 	</c:choose>
